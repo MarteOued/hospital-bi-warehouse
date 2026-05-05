@@ -1,0 +1,268 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 900" font-family="Inter, system-ui, -apple-system, sans-serif">
+  <defs>
+    <filter id="cardShadow2"><feDropShadow dx="0" dy="2" stdDeviation="6" flood-opacity="0.08"/></filter>
+    <linearGradient id="medGradient" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#A23B72"/><stop offset="1" stop-color="#7D2A56"/>
+    </linearGradient>
+  </defs>
+
+  <!-- BG -->
+  <rect width="1366" height="900" fill="#F5F5F5"/>
+
+  <!-- TITLE -->
+  <rect x="0" y="0" width="1366" height="80" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="1"/>
+  <rect x="0" y="0" width="1366" height="3" fill="#A23B72"/>
+  <text x="32" y="38" font-size="22" font-weight="800" fill="#1F2937">🩺 ANALYSE CLINIQUE &amp; MÉDICALE</text>
+  <text x="32" y="62" font-size="13" font-style="italic" fill="#6B7280">Direction Médicale · Chefs de service · Année 2024</text>
+  <text x="1334" y="42" font-size="11" font-weight="600" fill="#9CA3AF" text-anchor="end">DASHBOARD 2 / 3</text>
+  <text x="1334" y="60" font-size="10" fill="#9CA3AF" text-anchor="end">Martine Ouedraogo · Master 1 Lyon 2</text>
+
+  <!-- FILTER ROW -->
+  <rect x="0" y="80" width="1366" height="40" fill="#FAFAFA" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="32" y="105" font-size="11" font-weight="700" fill="#6B7280">FILTRES :</text>
+  <rect x="100" y="90" width="120" height="22" rx="4" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="110" y="106" font-size="11" fill="#374151">Année : 2024 ▾</text>
+  <rect x="232" y="90" width="160" height="22" rx="4" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="242" y="106" font-size="11" fill="#374151">Spécialité : Toutes ▾</text>
+  <rect x="404" y="90" width="160" height="22" rx="4" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <text x="414" y="106" font-size="11" fill="#374151">Type Service : Tous ▾</text>
+
+  <!-- GRID 2x2 -->
+  <!-- Top Left: Distribution Diagnostics -->
+  <rect x="20" y="140" width="664" height="270" rx="12" fill="#FFFFFF" filter="url(#cardShadow2)"/>
+  <text x="40" y="170" font-size="14" font-weight="700" fill="#1F2937">📊 Distribution des diagnostics</text>
+  <text x="40" y="188" font-size="11" fill="#9CA3AF">Top 8 pathologies par fréquence</text>
+  <g font-size="10">
+    <text x="40" y="220" fill="#374151">Hypertension</text>
+    <rect x="180" y="210" width="450" height="14" rx="2" fill="#A23B72"/>
+    <text x="640" y="220" font-weight="700" fill="#1F2937">1 245</text>
+
+    <text x="40" y="244" fill="#374151">Diabète T2</text>
+    <rect x="180" y="234" width="380" height="14" rx="2" fill="#A23B72" fill-opacity="0.9"/>
+    <text x="570" y="244" font-weight="700" fill="#1F2937">1 052</text>
+
+    <text x="40" y="268" fill="#374151">Asthme</text>
+    <rect x="180" y="258" width="290" height="14" rx="2" fill="#A23B72" fill-opacity="0.8"/>
+    <text x="480" y="268" font-weight="700" fill="#1F2937">802</text>
+
+    <text x="40" y="292" fill="#374151">Arthrose</text>
+    <rect x="180" y="282" width="245" height="14" rx="2" fill="#A23B72" fill-opacity="0.7"/>
+    <text x="435" y="292" font-weight="700" fill="#1F2937">678</text>
+
+    <text x="40" y="316" fill="#374151">Migraine</text>
+    <rect x="180" y="306" width="200" height="14" rx="2" fill="#A23B72" fill-opacity="0.6"/>
+    <text x="390" y="316" font-weight="700" fill="#1F2937">554</text>
+
+    <text x="40" y="340" fill="#374151">Anxiété</text>
+    <rect x="180" y="330" width="170" height="14" rx="2" fill="#A23B72" fill-opacity="0.5"/>
+    <text x="360" y="340" font-weight="700" fill="#1F2937">470</text>
+
+    <text x="40" y="364" fill="#374151">Allergie</text>
+    <rect x="180" y="354" width="135" height="14" rx="2" fill="#A23B72" fill-opacity="0.4"/>
+    <text x="325" y="364" font-weight="700" fill="#1F2937">373</text>
+
+    <text x="40" y="388" fill="#374151">Autres</text>
+    <rect x="180" y="378" width="105" height="14" rx="2" fill="#A23B72" fill-opacity="0.3"/>
+    <text x="295" y="388" font-weight="700" fill="#1F2937">290</text>
+  </g>
+
+  <!-- Top Right: Heatmap -->
+  <rect x="700" y="140" width="648" height="270" rx="12" fill="#FFFFFF" filter="url(#cardShadow2)"/>
+  <text x="720" y="170" font-size="14" font-weight="700" fill="#1F2937">🌡️ Type de Service × Diagnostic</text>
+  <text x="720" y="188" font-size="11" fill="#9CA3AF">Heatmap — intensité = fréquence</text>
+
+  <!-- Heatmap rows -->
+  <g font-size="9" fill="#6B7280">
+    <text x="720" y="222">Cardio</text><text x="720" y="248">Pneumo</text>
+    <text x="720" y="274">Endocrino</text><text x="720" y="300">Neuro</text>
+    <text x="720" y="326">Rhumato</text><text x="720" y="352">Allergo</text>
+  </g>
+  <!-- Heatmap header -->
+  <g font-size="8" fill="#9CA3AF">
+    <text x="800" y="208">Hyper.</text><text x="870" y="208">Diab.</text>
+    <text x="940" y="208">Asth.</text><text x="1010" y="208">Arth.</text>
+    <text x="1080" y="208">Migr.</text><text x="1150" y="208">Anx.</text>
+    <text x="1220" y="208">Aller.</text><text x="1290" y="208">Autre</text>
+  </g>
+  <!-- Heatmap cells (intensity by fill-opacity) -->
+  <g>
+    <!-- Cardio row -->
+    <rect x="788" y="215" width="60" height="22" fill="#1F618D"/>
+    <rect x="858" y="215" width="60" height="22" fill="#2E86AB" fill-opacity="0.85"/>
+    <rect x="928" y="215" width="60" height="22" fill="#5DADE2" fill-opacity="0.5"/>
+    <rect x="998" y="215" width="60" height="22" fill="#AED6F1" fill-opacity="0.6"/>
+    <rect x="1068" y="215" width="60" height="22" fill="#EAF2F8"/>
+    <rect x="1138" y="215" width="60" height="22" fill="#EAF2F8"/>
+    <rect x="1208" y="215" width="60" height="22" fill="#AED6F1" fill-opacity="0.4"/>
+    <rect x="1278" y="215" width="60" height="22" fill="#EAF2F8"/>
+    <!-- Pneumo -->
+    <rect x="788" y="241" width="60" height="22" fill="#5DADE2" fill-opacity="0.5"/>
+    <rect x="858" y="241" width="60" height="22" fill="#AED6F1" fill-opacity="0.6"/>
+    <rect x="928" y="241" width="60" height="22" fill="#1F618D"/>
+    <rect x="998" y="241" width="60" height="22" fill="#EAF2F8"/>
+    <rect x="1068" y="241" width="60" height="22" fill="#EAF2F8"/>
+    <rect x="1138" y="241" width="60" height="22" fill="#EAF2F8"/>
+    <rect x="1208" y="241" width="60" height="22" fill="#2E86AB" fill-opacity="0.85"/>
+    <rect x="1278" y="241" width="60" height="22" fill="#EAF2F8"/>
+    <!-- Endocrino -->
+    <rect x="788" y="267" width="60" height="22" fill="#AED6F1" fill-opacity="0.6"/>
+    <rect x="858" y="267" width="60" height="22" fill="#1F618D"/>
+    <rect x="928" y="267" width="60" height="22" fill="#EAF2F8"/>
+    <rect x="998" y="267" width="60" height="22" fill="#EAF2F8"/>
+    <rect x="1068" y="267" width="60" height="22" fill="#EAF2F8"/>
+    <rect x="1138" y="267" width="60" height="22" fill="#5DADE2" fill-opacity="0.5"/>
+    <rect x="1208" y="267" width="60" height="22" fill="#EAF2F8"/>
+    <rect x="1278" y="267" width="60" height="22" fill="#EAF2F8"/>
+    <!-- Neuro -->
+    <rect x="788" y="293" width="60" height="22" fill="#EAF2F8"/>
+    <rect x="858" y="293" width="60" height="22" fill="#EAF2F8"/>
+    <rect x="928" y="293" width="60" height="22" fill="#EAF2F8"/>
+    <rect x="998" y="293" width="60" height="22" fill="#EAF2F8"/>
+    <rect x="1068" y="293" width="60" height="22" fill="#1F618D"/>
+    <rect x="1138" y="293" width="60" height="22" fill="#2E86AB" fill-opacity="0.85"/>
+    <rect x="1208" y="293" width="60" height="22" fill="#EAF2F8"/>
+    <rect x="1278" y="293" width="60" height="22" fill="#5DADE2" fill-opacity="0.5"/>
+    <!-- Rhumato -->
+    <rect x="788" y="319" width="60" height="22" fill="#EAF2F8"/>
+    <rect x="858" y="319" width="60" height="22" fill="#EAF2F8"/>
+    <rect x="928" y="319" width="60" height="22" fill="#EAF2F8"/>
+    <rect x="998" y="319" width="60" height="22" fill="#1F618D"/>
+    <rect x="1068" y="319" width="60" height="22" fill="#5DADE2" fill-opacity="0.5"/>
+    <rect x="1138" y="319" width="60" height="22" fill="#EAF2F8"/>
+    <rect x="1208" y="319" width="60" height="22" fill="#EAF2F8"/>
+    <rect x="1278" y="319" width="60" height="22" fill="#AED6F1" fill-opacity="0.6"/>
+    <!-- Allergo -->
+    <rect x="788" y="345" width="60" height="22" fill="#EAF2F8"/>
+    <rect x="858" y="345" width="60" height="22" fill="#EAF2F8"/>
+    <rect x="928" y="345" width="60" height="22" fill="#5DADE2" fill-opacity="0.5"/>
+    <rect x="998" y="345" width="60" height="22" fill="#EAF2F8"/>
+    <rect x="1068" y="345" width="60" height="22" fill="#EAF2F8"/>
+    <rect x="1138" y="345" width="60" height="22" fill="#EAF2F8"/>
+    <rect x="1208" y="345" width="60" height="22" fill="#1F618D"/>
+    <rect x="1278" y="345" width="60" height="22" fill="#2E86AB" fill-opacity="0.85"/>
+  </g>
+  <!-- legend -->
+  <g font-size="8" fill="#9CA3AF">
+    <text x="720" y="392">Faible</text>
+    <rect x="760" y="385" width="20" height="10" fill="#EAF2F8"/>
+    <rect x="780" y="385" width="20" height="10" fill="#AED6F1"/>
+    <rect x="800" y="385" width="20" height="10" fill="#5DADE2"/>
+    <rect x="820" y="385" width="20" height="10" fill="#2E86AB"/>
+    <rect x="840" y="385" width="20" height="10" fill="#1F618D"/>
+    <text x="865" y="392">Élevé</text>
+  </g>
+
+  <!-- Bottom Left: Évolution × Spécialité -->
+  <rect x="20" y="430" width="664" height="270" rx="12" fill="#FFFFFF" filter="url(#cardShadow2)"/>
+  <text x="40" y="460" font-size="14" font-weight="700" fill="#1F2937">📈 Évolution mensuelle par spécialité</text>
+  <text x="40" y="478" font-size="11" fill="#9CA3AF">Top 5 spécialités · 12 mois</text>
+  <!-- mini grid -->
+  <line x1="60" y1="510" x2="660" y2="510" stroke="#F3F4F6"/>
+  <line x1="60" y1="555" x2="660" y2="555" stroke="#F3F4F6"/>
+  <line x1="60" y1="600" x2="660" y2="600" stroke="#F3F4F6"/>
+  <line x1="60" y1="645" x2="660" y2="645" stroke="#E5E7EB"/>
+  <!-- 5 lines -->
+  <path d="M 60 530 L 110 525 L 160 540 L 210 520 L 260 510 L 310 530 L 360 515 L 410 505 L 460 520 L 510 510 L 560 525 L 610 515" fill="none" stroke="#A23B72" stroke-width="2.5"/>
+  <path d="M 60 555 L 110 545 L 160 560 L 210 540 L 260 535 L 310 555 L 360 540 L 410 530 L 460 545 L 510 535 L 560 545 L 610 540" fill="none" stroke="#2E86AB" stroke-width="2.5"/>
+  <path d="M 60 580 L 110 570 L 160 585 L 210 575 L 260 565 L 310 590 L 360 580 L 410 570 L 460 585 L 510 580 L 560 570 L 610 575" fill="none" stroke="#06A77D" stroke-width="2.5"/>
+  <path d="M 60 605 L 110 600 L 160 610 L 210 605 L 260 595 L 310 615 L 360 605 L 410 600 L 460 610 L 510 605 L 560 600 L 610 605" fill="none" stroke="#F18F01" stroke-width="2.5"/>
+  <path d="M 60 625 L 110 620 L 160 635 L 210 625 L 260 620 L 310 635 L 360 625 L 410 620 L 460 630 L 510 625 L 560 620 L 610 625" fill="none" stroke="#7E78D2" stroke-width="2.5"/>
+  <!-- legend -->
+  <g font-size="9" fill="#6B7280">
+    <circle cx="70" cy="675" r="4" fill="#A23B72"/><text x="80" y="678">Cardiologie</text>
+    <circle cx="160" cy="675" r="4" fill="#2E86AB"/><text x="170" y="678">Dermatologie</text>
+    <circle cx="260" cy="675" r="4" fill="#06A77D"/><text x="270" y="678">Pédiatrie</text>
+    <circle cx="345" cy="675" r="4" fill="#F18F01"/><text x="355" y="678">Généraliste</text>
+    <circle cx="435" cy="675" r="4" fill="#7E78D2"/><text x="445" y="678">Radiologie</text>
+  </g>
+
+  <!-- Bottom Right: Bubble Médecins -->
+  <rect x="700" y="430" width="648" height="270" rx="12" fill="#FFFFFF" filter="url(#cardShadow2)"/>
+  <text x="720" y="460" font-size="14" font-weight="700" fill="#1F2937">🫧 Activité des médecins</text>
+  <text x="720" y="478" font-size="11" fill="#9CA3AF">Taille = consultations · Couleur = expérience</text>
+
+  <!-- bubbles -->
+  <g>
+    <circle cx="850" cy="555" r="40" fill="#A23B72" fill-opacity="0.7"/>
+    <text x="850" y="558" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">Davis</text>
+    <text x="850" y="572" font-size="8" fill="#FFFFFF" text-anchor="middle">350</text>
+
+    <circle cx="980" cy="540" r="32" fill="#2E86AB" fill-opacity="0.7"/>
+    <text x="980" y="543" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">Mason</text>
+    <text x="980" y="556" font-size="8" fill="#FFFFFF" text-anchor="middle">280</text>
+
+    <circle cx="1100" cy="600" r="28" fill="#06A77D" fill-opacity="0.7"/>
+    <text x="1100" y="603" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">Wright</text>
+    <text x="1100" y="616" font-size="8" fill="#FFFFFF" text-anchor="middle">240</text>
+
+    <circle cx="1210" cy="540" r="24" fill="#F18F01" fill-opacity="0.7"/>
+    <text x="1210" y="543" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">Tate</text>
+    <text x="1210" y="556" font-size="8" fill="#FFFFFF" text-anchor="middle">200</text>
+
+    <circle cx="900" cy="640" r="22" fill="#7E78D2" fill-opacity="0.7"/>
+    <text x="900" y="643" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">Bond</text>
+    <text x="900" y="656" font-size="8" fill="#FFFFFF" text-anchor="middle">170</text>
+
+    <circle cx="1040" cy="630" r="18" fill="#A23B72" fill-opacity="0.7"/>
+    <text x="1040" y="633" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">Smith</text>
+
+    <circle cx="1300" cy="610" r="20" fill="#2E86AB" fill-opacity="0.7"/>
+    <text x="1300" y="613" font-size="9" font-weight="700" fill="#FFFFFF" text-anchor="middle">Owen</text>
+  </g>
+
+  <!-- BOTTOM CHART: Évolution × Diagnostic × Saison -->
+  <rect x="20" y="720" width="1328" height="160" rx="12" fill="#FFFFFF" filter="url(#cardShadow2)"/>
+  <text x="40" y="750" font-size="14" font-weight="700" fill="#1F2937">📅 Consultations par diagnostic et saison</text>
+  <text x="40" y="768" font-size="11" fill="#9CA3AF">Barres empilées · 4 saisons · Top 6 diagnostics</text>
+
+  <!-- Stacked bars -->
+  <g font-size="9">
+    <text x="80" y="870" fill="#6B7280">Hyper.</text>
+    <rect x="115" y="800" width="50" height="60" fill="#06A77D"/>
+    <rect x="165" y="800" width="65" height="60" fill="#F18F01"/>
+    <rect x="230" y="800" width="55" height="60" fill="#C73E1D"/>
+    <rect x="285" y="800" width="60" height="60" fill="#3D5A80"/>
+
+    <text x="365" y="870" fill="#6B7280">Diab.</text>
+    <rect x="395" y="810" width="40" height="50" fill="#06A77D"/>
+    <rect x="435" y="810" width="55" height="50" fill="#F18F01"/>
+    <rect x="490" y="810" width="50" height="50" fill="#C73E1D"/>
+    <rect x="540" y="810" width="55" height="50" fill="#3D5A80"/>
+
+    <text x="615" y="870" fill="#6B7280">Asth.</text>
+    <rect x="645" y="820" width="35" height="40" fill="#06A77D"/>
+    <rect x="680" y="820" width="50" height="40" fill="#F18F01"/>
+    <rect x="730" y="820" width="55" height="40" fill="#C73E1D"/>
+    <rect x="785" y="820" width="35" height="40" fill="#3D5A80"/>
+
+    <text x="840" y="870" fill="#6B7280">Arth.</text>
+    <rect x="870" y="828" width="30" height="32" fill="#06A77D"/>
+    <rect x="900" y="828" width="40" height="32" fill="#F18F01"/>
+    <rect x="940" y="828" width="35" height="32" fill="#C73E1D"/>
+    <rect x="975" y="828" width="40" height="32" fill="#3D5A80"/>
+
+    <text x="1035" y="870" fill="#6B7280">Migr.</text>
+    <rect x="1065" y="833" width="28" height="27" fill="#06A77D"/>
+    <rect x="1093" y="833" width="35" height="27" fill="#F18F01"/>
+    <rect x="1128" y="833" width="32" height="27" fill="#C73E1D"/>
+    <rect x="1160" y="833" width="38" height="27" fill="#3D5A80"/>
+
+    <text x="1215" y="870" fill="#6B7280">Anx.</text>
+    <rect x="1245" y="836" width="22" height="24" fill="#06A77D"/>
+    <rect x="1267" y="836" width="30" height="24" fill="#F18F01"/>
+    <rect x="1297" y="836" width="25" height="24" fill="#C73E1D"/>
+    <rect x="1322" y="836" width="20" height="24" fill="#3D5A80"/>
+  </g>
+
+  <!-- Legend saisons -->
+  <g font-size="9" fill="#6B7280">
+    <rect x="900" y="775" width="10" height="10" fill="#06A77D"/><text x="914" y="784">Printemps</text>
+    <rect x="980" y="775" width="10" height="10" fill="#F18F01"/><text x="994" y="784">Été</text>
+    <rect x="1040" y="775" width="10" height="10" fill="#C73E1D"/><text x="1054" y="784">Automne</text>
+    <rect x="1120" y="775" width="10" height="10" fill="#3D5A80"/><text x="1134" y="784">Hiver</text>
+  </g>
+
+  <text x="1334" y="892" font-size="9" font-style="italic" fill="#9CA3AF" text-anchor="end">
+    Hospital BI Warehouse · Analyse Médicale · Université Lumière Lyon 2 · 2026
+  </text>
+</svg>

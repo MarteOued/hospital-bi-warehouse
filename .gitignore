@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Données brutes (sensibles, peut contenir des infos médicales)
+data/raw/
+*.csv
+!data/processed/sample_*.csv
+
+# Tableau
+*.twbr
+*.tbm
+~*.twb
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.claude/
+.agents/
+
+# Notes internes (pas pour GitHub)
+GUIDE_PUBLICATION.md
+
+# Vidéos & médias
+*.mp4
+*.mov
+*.mp3
+*.wav
